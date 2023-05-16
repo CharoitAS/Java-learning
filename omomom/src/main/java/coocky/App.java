@@ -22,5 +22,6 @@ public class App
             System.out.println(pit); 
             System.out.println("А мы надеялись увидеть Yes");
         }
+        in.close();
     }
 }
