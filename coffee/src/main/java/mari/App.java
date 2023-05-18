@@ -29,6 +29,10 @@ public class App
         int totalCoffeNeed = coffeePortions * coffeePerPortion;
         int totalMilkNeed = coffeePortions * milkPerPortion;
 
+        System.out.println("Требуется кофе " + totalCoffeNeed + " г.");
+        System.out.println("Требуется молока " + totalMilkNeed + " г.");
+        
+
         if (coffeeAmount >= totalCoffeNeed && milkAmount >= totalMilkNeed) {
             System.out.println("Кофе готовится");
         } else {
