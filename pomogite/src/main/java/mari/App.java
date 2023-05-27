@@ -16,19 +16,26 @@ public class App
         String linePing = "ping";
         String linePong = "pong";
         String lineQuit = "quit";
+        String lineMessage = "message";
 
         while (true) {
         
             System.out.println("Введи слово");
-            String lol = in.nextLine();
+            String cmd = in.nextLine();
 
-            if (lol.equals(linePing)) {
+            if (cmd.equals(linePing)) {
                 System.out.println(linePong);
+                
+            } else if (cmd.equals(lineMessage)) {
+                String author = in.nextLine();
+                String text = in.nextLine();
+                System.out.println(author + " написал(а) сообщение " + text);
 
-            } else if (lol.equals(lineQuit)) {
+            
+            }else if (cmd.equals(lineQuit)) {
                 break;
             } else {
-                System.out.println("Непонятное слово " + lol);
+                System.out.println("Непонятное слово " + cmd);
             }
         }
         System.out.println("Спасибо медведик");
