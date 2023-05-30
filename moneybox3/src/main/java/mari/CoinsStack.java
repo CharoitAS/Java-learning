@@ -1,8 +1,19 @@
 package mari;
 
 public class CoinsStack {
-    int coinValue;
-    int amount = 0;
+    private final int coinValue;
+    private int amount = 0;
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+    public int getCoinValue() {
+        return coinValue;
+    }
 
     public CoinsStack(int value) {
         coinValue = value;

@@ -18,17 +18,19 @@ public class App
         CoinsStack fiveRub = new CoinsStack(5);
         CoinsStack tenRub = new CoinsStack(10);
 
+        //oneRub.setAmount(50);
+
         while (true) {
             System.out.println("Введи номинал монеты");
             int coin = in.nextInt();
 
-            if (coin == oneRub.coinValue) {
+            if (coin == oneRub.getCoinValue()) {
                 oneRub.putCoin();
 
-            } else if (coin == fiveRub.coinValue) {
+            } else if (coin == fiveRub.getCoinValue()) {
                 fiveRub.putCoin();
 
-            } else if (coin == tenRub.coinValue) {
+            } else if (coin == tenRub.getCoinValue()) {
                 tenRub.putCoin();
 
             } else {
@@ -41,7 +43,7 @@ public class App
         fiveRub.printAmount();
         tenRub.printAmount();
 
-        int coinsAmount = oneRub.amount + fiveRub.amount + tenRub.amount;
+        int coinsAmount = oneRub.getAmount() + fiveRub.getAmount() + tenRub.getAmount();
         System.out.println("Всёго монет в копилке - " + coinsAmount);
 
         int rubles = oneRub.getRub() + fiveRub.getRub() + tenRub.getRub();
