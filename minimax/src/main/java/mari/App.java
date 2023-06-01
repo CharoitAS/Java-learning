@@ -39,20 +39,20 @@ public class App
         int middle = -1; 
     
 
-        if (vasyaAge < nastyaAge && vasyaAge < kolyaAge) {
+        if (vasyaAge <= nastyaAge && vasyaAge <= kolyaAge) {
             min = vasyaAge;
 
-        } else if (nastyaAge < kolyaAge && nastyaAge < vasyaAge) {
+        } else if (nastyaAge <= kolyaAge && nastyaAge <= vasyaAge) {
             min = nastyaAge;
 
         } else {
             min = kolyaAge;
         }
         
-        if (vasyaAge > nastyaAge && vasyaAge > kolyaAge) {
+        if (vasyaAge >= nastyaAge && vasyaAge >= kolyaAge) {
             max = vasyaAge;
 
-        } else if (nastyaAge > kolyaAge && nastyaAge > vasyaAge) {
+        } else if (nastyaAge >= kolyaAge && nastyaAge >= vasyaAge) {
             max = nastyaAge;
 
         } else {
