@@ -39,9 +39,9 @@ public class App
             }
         }
 
-        oneRub.printAmount();
-        fiveRub.printAmount();
-        tenRub.printAmount();
+        System.out.println(oneRub);
+        System.out.println(fiveRub);
+        System.out.println(tenRub);
 
         int coinsAmount = oneRub.getAmount() + fiveRub.getAmount() + tenRub.getAmount();
         System.out.println("Всёго монет в копилке - " + coinsAmount);

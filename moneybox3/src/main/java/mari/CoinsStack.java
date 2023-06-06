@@ -25,11 +25,16 @@ public class CoinsStack {
     }
 
     public void printAmount() {
-        System.out.println("С номиналом " + coinValue + " руб. - " + amount + " шт.");
+        System.out.println(toString());
     }
 
     public int getRub() {
         return amount*coinValue; 
     }
+    
+    public String toString() {
+       return "С номиналом " + coinValue + " руб. - " + amount + " шт.";
+    }
+
     
 }
