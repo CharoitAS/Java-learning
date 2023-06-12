@@ -13,8 +13,11 @@ public class App
     }
     
     public static void handleMessage(String author, String text){
-        if (text.contains("Как дела?") || text.contains("как дела?")){
+        String lowerText = text.toLowerCase();
+        if (lowerText.contains("как дела?")){
             sendMessage("У меня всё хорошо ^^");
+        } else if(lowerText.contains("как твоё имя?") || lowerText.contains("как тебя зовут?")) {
+            sendMessage("Миша я ^^");
         }
         System.out.println(author + " написал(а) сообщение " + text);
     }
