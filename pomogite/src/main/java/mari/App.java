@@ -8,8 +8,16 @@ import java.util.Scanner;
  */
 public class App 
 {
+    public static void sendMessage (String text){
+        System.out.println("/message " + text);
+    }
+    
+    public static void handleMessage(String author, String text){
+        System.out.println(author + " написал(а) сообщение " + text);
+    }
     public static void main( String[] args )
     {
+
         System.out.println( "Приветики медведики" );
         Scanner in = new Scanner(System.in);
 
@@ -23,13 +31,13 @@ public class App
             System.out.println("Введи слово");
             String cmd = in.nextLine();
 
-            if (cmd.equals(linePing)) {
-                System.out.println(linePong);
+            if (cmd.equals(linePing)) {                
+                sendMessage(linePong);
                 
             } else if (cmd.equals(lineMessage)) {
                 String author = in.nextLine();
                 String text = in.nextLine();
-                System.out.println(author + " написал(а) сообщение " + text);
+                handleMessage(author, text);
 
             
             }else if (cmd.equals(lineQuit)) {
