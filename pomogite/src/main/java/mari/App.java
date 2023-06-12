@@ -13,6 +13,9 @@ public class App
     }
     
     public static void handleMessage(String author, String text){
+        if (text.contains("Как дела?")){
+            sendMessage("У меня всё хорошо ^^");
+        }
         System.out.println(author + " написал(а) сообщение " + text);
     }
     public static void main( String[] args )
