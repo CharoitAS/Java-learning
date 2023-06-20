@@ -6,3 +6,4 @@
 - sumofnumbers - вычисление суммы чисел от 1 до n.
 - moneybox (1-5) - "Копилка", храние и подсчёт количество монет разных наминалов. Циклы и классы. Тесты на JUnit.
 - bot - учебный бот для Discord (используется с https://github.com/impassive-nik/java-project-handler).
+- selenium - Автотесты Selenium WebDriver.
