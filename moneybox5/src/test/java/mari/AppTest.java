@@ -51,6 +51,16 @@ public class AppTest
         Assert.assertEquals(stack.getAmount(), 100); // в стопке сто монет
         Assert.assertEquals(stack.getRub(), 1000); // в стопке тысяча рублей
         
-    }
+    }    
 
+    @Test
+    public void checkPutCoin4()
+    {
+        CoinsStack stack = new CoinsStack(1);
+        Assert.assertEquals(stack.getAmount(), 0); //изначально монет в стопке нет
+        Assert.assertEquals(stack.getRub(), 0); // начальная стоимость стопки 0 рублей
+        Assert.assertEquals(stack.getCoinValue(), 1); // в стопке однорублёвые монеты
+        Assert.assertEquals(stack.toString(), "С номиналом 1 руб. - 0 шт.");
+    }  
+        
 }

@@ -13,9 +13,8 @@ public class App
     {
         System.out.println( "Привет, это копилка!" );
         Scanner in = new Scanner(System.in);
-
         ArrayList<CoinsStack> coinsStacks = new ArrayList<>();
-
+        
 
         while (true) {
             System.out.println("Введи номинал монеты");

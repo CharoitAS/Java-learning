@@ -35,6 +35,7 @@ public class CoinsStack {
     public String toString() {
        return "С номиналом " + coinValue + " руб. - " + amount + " шт.";
     }
+    
 
     
 }
